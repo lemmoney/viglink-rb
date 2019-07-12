@@ -11,7 +11,7 @@ RSpec.describe Viglink::Configuration do
     end
 
     it 'allows to initialize without keys' do
-      config = described_class.new()
+      config = described_class.new
       expect(config.api_key).to eq(nil)
       expect(config.secret_key).to eq(nil)
     end

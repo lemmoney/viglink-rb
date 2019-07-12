@@ -1,5 +1,5 @@
 require 'viglink-rb/configuration'
-require "viglink-rb/version"
+require 'viglink-rb/version'
 
 module Viglink
   class << self
