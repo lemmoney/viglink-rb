@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Viglink::Configuration do
   describe '.initialize(api_key:, secret_key:)' do
     it 'sets api_key' do
@@ -11,9 +13,7 @@ RSpec.describe Viglink::Configuration do
     end
 
     it 'allows to initialize without keys' do
-      config = described_class.new
-      expect(config.api_key).to eq(nil)
-      expect(config.secret_key).to eq(nil)
+      expect { described_class.new }.not_to raise_error
     end
   end
 end

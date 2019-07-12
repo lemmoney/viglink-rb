@@ -1,9 +1,11 @@
-require 'viglink-rb/configuration'
-require 'viglink-rb/version'
+# frozen_string_literal: true
+
+require 'viglink/configuration'
+require 'viglink/version'
 
 module Viglink
   class << self
-    attr_accessor :configuration
+    attr_writer :configuration
   end
 
   def self.configuration
