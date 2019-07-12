@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "viglink-rb"
+require_relative "../lib/viglink-rb/viglink"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
