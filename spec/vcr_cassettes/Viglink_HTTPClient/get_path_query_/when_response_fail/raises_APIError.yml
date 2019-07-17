@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://publishers.viglink.com/api/merchant/search
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - secret
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Cache-Control:
+      - no-cache
+      - no-store
+      Content-Language:
+      - en
+      Content-Type:
+      - text/html;charset=UTF-8
+      Date:
+      - Wed, 17 Jul 2019 19:26:14 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=9CBC994CD021FA1A49178700BD988C48; Path=/; HttpOnly
+      - WEBROUTEID=1; path=/
+      - vglnk.Agent.p=8e93085cb60996e5956e2ce03a6decae; Domain=.viglink.com; Expires=Sat,
+        14-Jul-2029 19:26:14 GMT; Path=/
+      - vglnk.PartnerRfsh.p=""; Domain=.viglink.com; Expires=Thu, 01-Jan-1970 00:00:10
+        GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '3718'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<!doctype html>\n<html lang=\"en\" xmlns:og=\"http://ogp.me/ns#\" xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head>\n
+        \   <script type=\"text/javascript\">var _timer_baseline = new Date();</script>\n\n
+        \   <title>VigLink - Error 401</title>\n\n    <meta http-equiv=\"Content-type\"
+        content=\"text/html; charset=utf-8\"/>\n    <meta name=\"keywords\" content=\"affiliate
+        marketing, monetization, content, optimization\"/>\n    <meta name=\"description\"\n
+        \         content=\"Your links can be doing more. Unlock the power of your
+        site&#39;s links and earn extra money from your site automatically, transparently
+        and honestly.\"/>\n    <meta name=\"verification\" content=\"6edbeabaf24eb6f82df0d940e33659c9\"/>\n
+        \   <meta name=\"wot-verification\" content=\"894d869dfb0940dc8ec1\"/>\n\n
+        \   <meta property=\"og:title\" content=\"VigLink\"/>\n    <meta property=\"og:type\"
+        content=\"company\"/>\n    <meta property=\"og:url\" content=\"http://www.viglink.com/\"/>\n
+        \   <meta property=\"og:image\" content=\"http://www.viglink.com/public/images/logo-icon-small.png\"/>\n
+        \   <meta property=\"og:email\" content=\"info@viglink.com\"/>\n    <meta
+        property=\"og:phone_number\" content=\"+1 (415) 963-9826\"/>\n    <meta property=\"og:fax_number\"
+        content=\"+1 (415) 520-6695\"/>\n    <meta property=\"og:site_name\" content=\"VigLink\"/>\n
+        \   <meta property=\"fb:admins\" content=\"6003321,705684\"/>\n\n    <link
+        rel=\"icon\" type=\"image/png\" href=\"/public/images/favicon.png\"/>\n\n
+        \       <script type=\"text/javascript\">\n        var unescapeHtml = function
+        (s) {\n            var temp = document.createElement(\"div\");\n            temp.innerHTML
+        = s;\n            var result = temp.childNodes[0].nodeValue;\n            temp.removeChild(temp.firstChild);\n
+        \           return result;\n        };\n\n        var ENV = {\n            account:
+        {  },\n            cookie: {\n                domain: '.viglink.com',\n                suffix:
+        'p' ? '.p' : ''\n            }\n        };\n    </script>\n\n    <link rel=\"stylesheet\"
+        type=\"text/css\" href=\"/wro/global-bec608a7.css\"/>\n    <script type=\"text/javascript\"
+        src=\"/wro/global-bec608a7.js\"></script>\n    <!--[if lt IE 9]>\n    <script
+        src=\"/public/js/html5.js\"></script>\n    <![endif]-->\n</head>\n<body>\n<div
+        class=\"content\">\n    <header>\n    <div id=\"cap\"></div>\n\n    <div class=\"content\">\n
+        \       <h1><a href=\"/dashboard\">VigLink</a></h1>\n    </div>\n</header>\n<div
+        id=\"body\">\n    \t<section class=\"sparse\">\n    <h2>401 Unauthorized</h2>\n\n
+        \   <p>You're not authorized to do that.</p>\n\n    <p>\n      <a href=\"mailto:support@viglink.com?subject=Unauthorized\">Contact
+        us</a>\n    </p>\n  </section></div>\n    <div class=\"wrapper\">\n  <footer>\n
+        \   <div class=\"content\">\n      <span>\n        &copy; VigLink\n        2019</span>\n
+        \   </div>\n  </footer>\n</div>\n</div>\n\n<script type=\"text/javascript\">\n
+        \       var _gaq = _gaq || [];\n        _gaq.push(['_setAccount', 'UA-8560005-1']);\n
+        \       _gaq.push(['_setDomainName', 'viglink.com']);\n        _gaq.push(['_setAllowHash',
+        false]);\n        _gaq.push(['_trackPageview']);\n\n        (function() {\n
+        \           var ga = document.createElement('script');\n            ga.type
+        = 'text/javascript';\n            ga.async = true;\n            ga.src = ('https:'
+        == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';\n
+        \           var s = document.getElementsByTagName('script')[0];\n            s.parentNode.insertBefore(ga,
+        s);\n        })();\n    </script>\n\n    <script type=\"text/javascript\">\n
+        \       (function() {\n            var url = '//ci29.actonsoftware.com/acton/bn/3622/visitor.gif',
+        params = $.param({\n                ts: (new Date().getTime()),\n                ref:
+        document.referrer\n            });\n            document.createElement(\"img\").src
+        = url + \"?\" + params;\n        })();\n    </script>\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Wed, 17 Jul 2019 19:26:15 GMT
+recorded_with: VCR 5.0.0

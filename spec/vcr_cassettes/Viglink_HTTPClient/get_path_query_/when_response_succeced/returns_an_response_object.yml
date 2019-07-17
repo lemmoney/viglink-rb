@@ -1,0 +1,423 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://publishers.viglink.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - secret <SECRET_KEY>
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 17 Jul 2019 19:25:48 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Location:
+      - https://publishers.viglink.com/publisher/dashboard
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 17 Jul 2019 19:25:49 GMT
+- request:
+    method: get
+    uri: https://publishers.viglink.com/publisher/dashboard
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - secret <SECRET_KEY>
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 17 Jul 2019 19:26:05 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Location:
+      - https://sessions.viglink.com/sign-in
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Vary:
+      - Accept
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 17 Jul 2019 19:26:05 GMT
+- request:
+    method: get
+    uri: https://sessions.viglink.com/sign-in
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - secret <SECRET_KEY>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jul 2019 19:26:08 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=a9f4ec26afd1a12e59e8ed411031c950; path=/; domain=.viglink.com
+      - __cfduid=dba5ee46a54507a7f00eee8341ae3f9421563391567; expires=Thu, 16-Jul-20
+        19:26:07 GMT; path=/; domain=.viglink.com; HttpOnly
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept,Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f7e9b111d2e880a-GIG
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if IE 8]> <html lang=\"en\" class=\"ie8 no-js\">
+        <![endif]-->\n<!--[if IE 9]> <html lang=\"en\" class=\"ie9 no-js\"> <![endif]-->\n<!--[if
+        !IE]><!-->\n<html lang=\"en\">\n<!--<![endif]-->\n\n    <head>\n        <title>Sign
+        In - VigLink</title><meta charset=\"UTF-8\">\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=UTF-8\" >\n<meta name=\"keywords\" content=\"affiliate
+        marketing, monetization, content, optimization\" >\n<meta name=\"description\"
+        content=\"Sign into your VigLink account to manage your settings and track
+        your VigLink commissions.\" >\n        <link href=\"/min//528b4ff950184363c0b90221a3aec1b7.css\"
+        media=\"screen,print\" rel=\"stylesheet\" type=\"text/css\" >\n        <meta
+        charset=\"utf-8\" />\n        <meta name=\"referrer\" content=\"same-origin\"
+        />\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"
+        />\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n\n
+        \       <!-- IE -->\n        <link rel=\"shortcut icon\" type=\"image/x-icon\"
+        href=\"/img/favicon.png\" />\n        <!-- other browsers -->\n        <link
+        rel=\"icon\" type=\"image/x-icon\" href=\"/img/favicon.png\" />\n        <link
+        rel=\"apple-touch-icon\" type=\"image/png\" href=\"/img/apple-touch-icon.png\">\n
+        \       <!-- <link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all\"
+        rel=\"stylesheet\" type=\"text/css\" /> -->\n\n        <link href=\"/assets-app/global/plugins/font-awesome/v5/css/fontawesome-pro-core.css\"
+        rel=\"stylesheet\" type=\"text/css\" />\n        <link href=\"/assets-app/global/plugins/font-awesome/v5/css/fontawesome-pro-brands.css\"
+        rel=\"stylesheet\" type=\"text/css\" />\n        <link href=\"/assets-app/global/plugins/font-awesome/v5/css/fontawesome-pro-light.css\"
+        rel=\"stylesheet\" type=\"text/css\" />\n        <link href=\"/assets-app/global/plugins/font-awesome/v5/css/fontawesome-pro-regular.css\"
+        rel=\"stylesheet\" type=\"text/css\" />\n        <link href=\"/assets-app/global/plugins/font-awesome/v5/css/fontawesome-pro-solid.css\"
+        rel=\"stylesheet\" type=\"text/css\" />\n        <link href=\"/assets-app/global/plugins/font-awesome/v5/css/fontawesome-pro-svg-framework.css\"
+        rel=\"stylesheet\" type=\"text/css\" />\n        <script type=\"text/javascript\"
+        src=\"/min//c7c48a703cce294e4ef307b2fe50814e.js\"></script>\n<script type=\"text/javascript\">\n
+        \   //<!--\n            var vglnkRecaptchaPublicKeys = {\n            v2:
+        '6LetIXkUAAAAAC2g8EfthfVd8e9342J0kDGvEeO2',\n            v3: '6LepNXgUAAAAAAekwH2yBXAMUljz3gAoWkDycPp9'\n
+        \       };\n            //-->\n</script>\n<script type=\"text/javascript\"
+        src=\"https://www.google.com/recaptcha/api.js?render=6LepNXgUAAAAAAekwH2yBXAMUljz3gAoWkDycPp9\"></script>\n<script
+        type=\"text/javascript\">\n    //<!--\n    var dataLayer = window.dataLayer
+        = window.dataLayer || [];\ndataLayer.push({\"a_li\":0,\"a_id\":0,\"is_a\":0,\"is_m\":0});
+        \   //-->\n</script>\n<script type=\"text/javascript\" async=\"async\" defer=\"defer\"
+        src=\"https://www.google.com/recaptcha/api.js\"></script>\n        <script
+        type=\"text/javascript\">\n            \n                    </script>\n\n
+        \                   <!-- Begin SessionStack code -->\n            <script
+        type=\"text/javascript\">\n                !function(a,b){var c=window;c.SessionStackKey=a,c[a]=c[a]||{t:b,\n
+        \                   q:[]};for(var d=[\"start\",\"stop\",\"identify\",\"getSessionId\",\"log\",\"setOnDataCallback\"],e=0;e<d.length;e++)!function(b){\n
+        \                   c[a][b]=c[a][b]||function(){c[a].q.push([b].concat([].slice.call(arguments,0)));\n
+        \                   }}(d[e]);var f=document.createElement(\"script\");f.async=1,f.src=\"https://cdn.sessionstack.com/sessionstack.js\";\n
+        \                   var g=document.getElementsByTagName(\"script\")[0];g.parentNode.insertBefore(f,g);\n
+        \               }(\"SessionStack\",\"2ca085f05a1844e0a81a71ebb5005974\");\n
+        \           </script>\n            <!-- End SessionStack Code -->\n            <script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew
+        Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-PTQRPXP');\n\nvar
+        _gaq = {\n    push: function(arrayArgs)\n    {\n        var dataLayer = window.dataLayer
+        = window.dataLayer || [];\n\n        if (arrayArgs[0] == '_trackEvent')\n
+        \       {\n            dataLayer.push({\n                'event': 'trackEvent',\n
+        \               'eventCategory': arrayArgs[1],\n                'eventAction':
+        arrayArgs[2],\n                'eventLabel': arrayArgs[3]\n            });\n
+        \       }\n    }\n};\n</script>\n\n    <script type=\"text/javascript\">\n
+        \       (function(a){var h=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments)}},e=encodeURIComponent,c=document,f=c.getElementsByTagName(\"SCRIPT\")[0],b=\"t=\"+e(c.title||\"\")+\"&u=\"+e(c.location.href||\"\")+\"&r=\"+e(c.referrer||\"\");window.Autopilot||(window.Autopilot=h);a.app&&(b=\"devmode=true&\"+b);var
+        g=function(a,b){$.ajax({url:\"https://api.autopilothq.com/anywhere/3e86d53ee8a34d34829fc71c82d80bcfe9049fea2bb84b83930996ff8bdc9fd8\",timeout:5E3}).done(function(){var
+        d=c.createElement(\"SCRIPT\");\n            d.src=a;d.type=\"text/javascript\";d.async=b;f.parentNode.insertBefore(d,f)}).fail(function(){console.log(\"test12\")})};a.noaa||g(\"https://api.autopilothq.com/anywhere/aa/3e86d53ee8a34d34829fc71c82d80bcfe9049fea2bb84b83930996ff8bdc9fd8?\"+b,!1);a=function(){g(\"https://api.autopilothq.com/anywhere/3e86d53ee8a34d34829fc71c82d80bcfe9049fea2bb84b83930996ff8bdc9fd8?\"+b,!0)};window.attachEvent?window.attachEvent(\"onload\",a):window.addEventListener(\"load\",a,!1)})({app:false});\n
+        \   </script>\n            <script>\n            window.Autopilot.run(\"associate\",
+        {\n                Email: '',\n                FirstName: '',\n                LastName:
+        '',\n                Phone: '',\n                MailingStreet: '',\n                MailingCity:
+        '',\n                MailingState: '',\n                MailingPostalCode:
+        '',\n                MailingCountry: '',\n                custom: {\n                    \"string--User--type\":
+        \"publisher\",\n                    \"integer--Publisher--account--id\": 0,\n
+        \                   \"date--Signup--date\": '',\n                    \"string--Publisher--last--ip\":
+        '177.124.225.198',\n                    \"date--Last--login--date\": '',\n
+        \                   \"boolean--Admin--account\": false,\n                    \"string--Account--status\":
+        '',\n                    \"integer--First--campaign--id\": 0,\n                    \"string--First--campaign--key\":
+        '',\n                    \"string--First--campaign--approval--status\": '',\n
+        \                   \"date--First--campaign--create--date\": '',\n                    \"string--First--campaign--industry--type\":
+        '',\n                    \"string--First--campaign--website--type\": '',\n
+        \                   \"string--First--campaign--software--type\": '',\n                    \"float--Average--monthly--earnings\":
+        0,\n                    \"date--First--click--date\": '',\n                    \"integer--Number--of--payments\":
+        ,\n                    \"integer--Number--of--referrals\": 0,\n                    \"float--Lifetime--referral--revenue\":
+        0,\n                    \"string--Managed--type\": 'Self-Service'\n                }\n
+        \           });\n        </script>\n        </head>\n    <!-- END HEAD -->\n\n
+        \   <body class=\"page-container-bg-solid page-md\" style=\"height:100%; overflow:
+        auto;\">\n        <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-PTQRPXP\"\nheight=\"0\"
+        width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n
+        \       <div class=\"page-wrapper\">\n            <div class=\"page-wrapper-row\">\n
+        \               <div class=\"page-wrapper-top\">\n                    <!--
+        BEGIN HEADER -->\n                    <div class=\"page-header\">\n                        <!--
+        BEGIN HEADER TOP -->\n\n                        <div class=\"page-header-top\">\n
+        \                           <div class=\"container\">\n                                <!--
+        BEGIN LOGO -->\n                                <div class=\"page-logo\">\n
+        \                                                                           <a
+        href=\"https://www.viglink.com\">\n                                                                                <img
+        src=\"/img/Logo_2.png\" alt=\"logo\" class=\"logo-default\" style=\"margin:
+        22px 0 0; max-height: 42px !important;width: auto;\">\n                                    </a>\n
+        \                               </div>\n                                <!--
+        END LOGO -->\n                                <!-- BEGIN RESPONSIVE MENU TOGGLER
+        -->\n                                <a href=\"javascript:;\" class=\"menu-toggler\"></a>\n
+        \                               <!-- END RESPONSIVE MENU TOGGLER -->\n                                <!--
+        BEGIN TOP NAVIGATION MENU -->\n                                <div class=\"top-menu\">\n
+        \                                                                           <ul
+        class=\"nav navbar-nav pull-right\">\n\n                                            <!--
+        BEGIN USER LOGIN DROPDOWN -->\n                                            <li
+        class=\"dropdown dropdown-user\">\n                                                <a
+        href=\"https://sessions.viglink.com/sign-in\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"
+        data-hover=\"dropdown\" data-close-others=\"true\">\n                                                    <span
+        class=\"username\">Sign In <i class=\"fa fa-caret-down\"></i></span>\n                                                </a>\n
+        \                                               <ul class=\"dropdown-menu
+        dropdown-menu-default\">\n                                                    <li>\n
+        \                                                       <a href=\"https://sessions.viglink.com/sign-in\">Publisher
+        Sign In </a>\n                                                    </li>\n
+        \                                                   <li>\n                                                        <a
+        href=\"https://www.viglink.com/merchants/login\"> Merchant Sign In </a>\n
+        \                                                   </li>\n                                                </ul>\n
+        \                                           </li>\n                                            <!--
+        END USER LOGIN DROPDOWN -->\n                                            <li
+        class=\"dropdown dropdown-extended quick-sidebar-toggler\" style=\"padding-top:
+        10px;\">\n                                                <a class=\"btn vl-blue\"
+        href=\"https://publishers.viglink.com/sign-up\">Join VigLink</a>\n                                            </li>\n\n
+        \                                       </ul>\n                                                                    </div>\n
+        \                               <!-- END TOP NAVIGATION MENU -->\n                            </div>\n
+        \                       </div>\n                        <!-- END HEADER TOP
+        -->\n                        <!-- BEGIN HEADER MENU -->\n                        <div
+        class=\"page-header-menu\">\n                            <div class=\"container\">\n
+        \                               <!-- BEGIN HEADER SEARCH BOX -->\n                                <!--<form
+        class=\"search-form\" action=\"page_general_search.html\" method=\"GET\">\n
+        \                                   <div class=\"input-group\">\n                                        <input
+        type=\"text\" class=\"form-control\" placeholder=\"Search\" name=\"query\">\n
+        \                                       <span class=\"input-group-btn\">\n
+        \                                           <a href=\"javascript:;\" class=\"btn
+        submit\">\n                                                <i class=\"icon-magnifier\"></i>\n
+        \                                           </a>\n                                        </span>\n
+        \                                   </div>\n                                </form>-->\n
+        \                               <!-- END HEADER SEARCH BOX -->\n                                \n\n<!--
+        BEGIN MEGA MENU -->\n<!-- DOC: Apply \"hor-menu-light\" class after the \"hor-menu\"
+        class below to have a horizontal menu with white background -->\n<!-- DOC:
+        Remove data-hover=\"dropdown\" and data-close-others=\"true\" attributes below
+        to disable the dropdown opening on mouse hover -->\n<div class=\"hor-menu\">\n
+        \   <ul class=\"nav navbar-nav\">\n\n                        <li aria-haspopup=\"true\"
+        class=\"menu-dropdown classic-menu-dropdown\">\n                    <a href=\"javascript:;\">Publishers<span
+        class=\"arrow\"></span></a>\n                    <ul class=\"dropdown-menu
+        pull-left\">\n                                                    <li aria-haspopup=\"true\"
+        class=\" \">\n                                <a href=\"https://www.viglink.com/merchants\"
+        class=\"nav-link\"> Merchants Explorer </a>\n                            </li>\n
+        \                                                   <li aria-haspopup=\"true\"
+        class=\" \">\n                                <a href=\"https://www.viglink.com/trends/explorer\"
+        class=\"nav-link\"> Trends Explorer </a>\n                            </li>\n
+        \                                           </ul>\n                </li>\n
+        \                               <li aria-haspopup=\"true\" class=\"menu-dropdown
+        classic-menu-dropdown\">\n                    <a href=\"http://www.viglink.com/advertiser-network-affiliate-programs\">Merchants<span
+        class=\"arrow\"></span></a>\n                </li>\n                                <li
+        aria-haspopup=\"true\" class=\"menu-dropdown classic-menu-dropdown\">\n                    <a
+        href=\"//www.viglink.com/customer-success/\">Customer Success<span class=\"arrow\"></span></a>\n
+        \               </li>\n                                <li aria-haspopup=\"true\"
+        class=\"menu-dropdown classic-menu-dropdown\">\n                    <a href=\"javascript:;\">About<span
+        class=\"arrow\"></span></a>\n                    <ul class=\"dropdown-menu
+        pull-left\">\n                                                    <li aria-haspopup=\"true\"
+        class=\" \">\n                                <a href=\"//www.viglink.com/about/\"
+        class=\"nav-link\"> Our Team </a>\n                            </li>\n                                                    <li
+        aria-haspopup=\"true\" class=\" \">\n                                <a href=\"//www.viglink.com/about/careers/\"
+        class=\"nav-link\"> Careers </a>\n                            </li>\n                                                    <li
+        aria-haspopup=\"true\" class=\" \">\n                                <a href=\"http://www.viglink.com/blog\"
+        class=\"nav-link\"> Blog </a>\n                            </li>\n                                            </ul>\n
+        \               </li>\n                    </ul>\n</div>\n<!-- END MEGA MENU
+        -->\n                            </div>\n                        </div>\n
+        \                       <!-- END HEADER MENU -->\n                    </div>\n
+        \                   <!-- END HEADER -->\n                </div>\n            </div>\n\n
+        \           <div class=\"page-wrapper-row full-height\">\n                <div
+        class=\"page-wrapper-middle\">\n                    <!-- BEGIN CONTAINER -->\n
+        \                   <div class=\"page-container\">\n                        <!--
+        BEGIN CONTENT -->\n\n                        <div class=\"page-content-wrapper\">\n
+        \                           <!-- BEGIN CONTENT BODY -->\n                            <!--
+        BEGIN PAGE HEAD-->\n\n                            \n\n                            <div
+        class=\"page-head\" style=\"background-color: #F1F2F2;\">\n                                <div
+        class=\"container\">\n                                    <div class=\"row\">\n
+        \                                       <div class=\"col-xs-12  \">\n                                            <!--
+        BEGIN PAGE TITLE -->\n                                            <div class=\"page-breadcrumb\"
+        style=\"padding-top: 0px; padding-bottom: 0px;\">\n                                                                                            </div>\n
+        \                                           <div class=\"page-title\">\n                                                <h1
+        style=\"font-size: 30px;\"></h1>\n                                            </div>\n
+        \                                           <!-- END PAGE TITLE -->\n                                            <!--
+        BEGIN PAGE TOOLBAR -->\n                                            <div class=\"page-toolbar\">\n\n
+        \                                           </div>\n                                            <!--
+        END PAGE TOOLBAR -->\n                                        </div>\n                                                                            </div>\n
+        \                               </div>\n                            </div>\n
+        \                           <!-- END PAGE HEAD-->\n                            <!--
+        BEGIN PAGE CONTENT BODY -->\n                            <div class=\"page-content\">\n
+        \                               <div class=\"container\">\n                                    <!--
+        BEGIN PAGE CONTENT INNER -->\n                                    <div class=\"page-content-inner\">\n
+        \                                       \n<!-- BEGIN PAGE CONTENT INNER -->\n<div
+        class=\"page-content-inner\">\n    <div class=\"row\">\n        <div class=\"col-xs-12
+        col-sm-3 col-lg-4\"></div>\n        <div class=\"col-xs-12 col-sm-6 col-lg-4\">\n
+        \           <div id=\"portlet-chart-metrics\" class=\"portlet light\">\n                <div
+        class=\"portlet-title\">\n                <div style=\"text-align: left;\"><h2
+        style=\"margin: 0px; px; text-align: center; font-weight: 400;\">Sign In</h2></div>\n
+        \               </div>\n\n                <div id=\"portlet-body-main\" class=\"portlet-body\"
+        style=\"text-align: center; padding-bottom: 10px; position: relative;\">\n
+        \                   <form id=\"form-publisher-login\" role=\"form\" action=\"https://sessions.viglink.com/io/publisher/login\"
+        method=\"post\">\n                        <div id=\"portlet-body-inner-main\"
+        style=\"position: relative;\">\n                                <div id=\"alert-collapsable\"
+        class=\"collapse\">\n                                    <div id=\"alert\"
+        class=\"alert alert-danger alert-dismissable\" style=\"opacity: 0; border-radius:
+        2px; border-width: 0px;\">\n                                        <!--<button
+        type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\"></button>-->\n
+        \                                       <span class=\"alert-message\"></span>\n
+        \                                   </div>\n                                </div>\n\n
+        \                               <div style=\"display: table; font-size: 20px;
+        margin: 0 auto; border-collapse: separate; text-align: left;\">\n                                    \n
+        \                                       <a class=\"btn\" href=\"https://publishers.viglink.com/sign-in/auth/google\"
+        style=\"margin: 10px;background-color: #4285F4; color: #FFFFFF !important;
+        padding: 1px;\">\n                                            <div style=\"display:
+        table-row;\">\n                                                <div style=\"display:
+        table-cell; background-color: #FFF; padding: 12px; width: 50px;\"><img src=\"/assets-app/layouts/layout3/img/logo-google.png\"
+        style=\"width: 20px; height: 18px;\"/>\n                                                </div>\n
+        \                                               <div style=\"display: table-cell;
+        padding: 14px 12px 10px 12px; \">Sign in with Google\n                                                </div>\n
+        \                                           </div>\n                                        </a>\n
+        \                                                                       </div>\n
+        \                               <div><h4>&mdash; or &mdash;</h4></div>\n\n
+        \                               <div id=\"email-signup\">\n                                    <div
+        id=\"formContainer\" class=\"form\" style=\"visibility: visible;\">\n\n                                        <div
+        class=\"form-body\" style=\"text-align: left;\">\n                                            \n<input
+        type=\"hidden\" name=\"vig_vtoken\" value=\"08d39cc9fabd1d7da7fd2b8164dd89c2\"
+        class=\"vig_vtoken\" id=\"i5541563271\"><div id=\"form-element-email\" class=\"form-group-container\">\n
+        \                       <div class=\"form-group form-md-line-input form-md-floating-label\">\n
+        \                           <div id=\"form-element-email-inner-container\">\n
+        \                               <div id=\"form-element-email-group-container\"><input
+        type=\"text\" id=\"email\" name=\"email\" class=\"form-element form-control
+        form-element-email\" maxlength=\"255\" value=\"\" aria-describedby=\"form-element-email-help-block\"
+        /><label for=\"email\" class=\"control-label\">E-mail</label><span id=\"form-element-email-help-block\"
+        class=\"help-block\">Enter your e-mail address</span></div></div><span class=\"form-control-feedback
+        hidden\"><i class=\"fa fa-fw\" aria-hidden=\"true\"></i></span>\n                        </div>\n
+        \                   </div><div id=\"form-element-password\" class=\"form-group-container\">\n
+        \                       <div class=\"form-group form-md-line-input form-md-floating-label\">\n
+        \                           <div id=\"form-element-password-inner-container\">\n
+        \                               <div id=\"form-element-password-group-container\"><input
+        type=\"password\" id=\"password\" name=\"password\" class=\"form-element form-control
+        form-element-password\" maxlength=\"32\" value=\"\" aria-describedby=\"form-element-password-help-block\"
+        /><label for=\"password\" class=\"control-label\">Password</label><span id=\"form-element-password-help-block\"
+        class=\"help-block\">Enter your password</span></div></div><span class=\"form-control-feedback
+        hidden\"><i class=\"fa fa-fw\" aria-hidden=\"true\"></i></span>\n                        </div>\n
+        \                   </div>\n<input type=\"hidden\" name=\"redirectUrl\" value=\"\"
+        id=\"redirectUrl\">\n<input type=\"hidden\" name=\"code\" value=\"\" id=\"code\">\n
+        \                                               <div id=\"portlet-body-inner-confirm\"
+        style=\"display: none; opacity: 0; padding: 14px 0px;\">\n                                                    <div
+        id=\"g-recaptcha-login\" class=\"g-recaptcha\" style=\"margin: 0 auto; width:
+        304px; height: 78px; background-color: #fafafa;\" data-sitekey=\"6LetIXkUAAAAAC2g8EfthfVd8e9342J0kDGvEeO2\"></div>\n
+        \                                               </div>\n\n                                                                                        </div>\n
+        \                                   </div>\n                                </div>\n
+        \                                                                   <button
+        id=\"btn-sign-in\" type=\"button\" class=\"btn-sign-in btn vl-blue\" style=\"margin-bottom:
+        20px; min-width: 120px;\" disabled><span id=\"sign-in-btn-txt\">Sign In</span></button>\n
+        \                                   <div style=\"text-align: center;\"><a
+        href=\"https://publishers.viglink.com/password-reset\">forgot password?</a></div>\n
+        \                                                           </div>\n                    </form>\n
+        \               </div>\n                <div style=\"text-align: center;\"></div>\n
+        \           </div>\n\n            <div style=\"padding-bottom: 16px; text-align:
+        center;\">Don&apos;t have an account? <a href=\"https://publishers.viglink.com/sign-up\">Sign
+        up</a></div>\n       </div>\n       <div class=\"col-xs-12 col-sm-3 col-lg-4\"></div>\n
+        \   </div>\n</div>\n<!-- END PAGE CONTENT INNER -->\n                                    </div>\n
+        \                                   <!-- END PAGE CONTENT INNER -->\n                                </div>\n
+        \                           </div>\n                            <!-- END PAGE
+        CONTENT BODY -->\n                            <!-- END CONTENT BODY -->\n
+        \                       </div>\n                        <!-- END CONTENT -->\n
+        \                   </div>\n                    <!-- END CONTAINER -->\n                </div>\n
+        \           </div>\n            <div class=\"page-wrapper-row\">\n                <div
+        class=\"page-wrapper-bottom\">\n                    \n\n                    <!--
+        BEGIN FOOTER -->\n                    <!-- BEGIN PRE-FOOTER -->\n                    <div
+        class=\"page-prefooter\">\n\n  <footer class=\"vl-footer hidden-print\">\n
+        \   <div class=\"container\">\n        <div class=\"row m-b-20\">\n            <div
+        class=\"col-xs-12\">\n                <nav class=\"text-center\">\n                    <ul>\n
+        \                       <li><a href=\"http://www.viglink.com/blog\">Blog</a></li>\n
+        \                       <li><a href=\"https://www.viglink.com/advertiser-network-affiliate-programs\">Advertisers</a></li>\n
+        \                       <li><a href=\"https://support.viglink.com/hc/en-us\">Support</a></li>\n
+        \                       <li><a href=\"https://viglink-developer-center.readme.io/v1.0\">Developer
+        Center</a></li>\n                        <li><a href=\"https://publishers.viglink.com/referrals\">Referral
+        Program</a></li>\n                        <li><a href=\"https://www.viglink.com/legal/privacy\">Privacy
+        &amp; Policies</a></li>\n                        <li><a href=\"https://www.viglink.com/jobs\">Careers</a></li>\n
+        \                   </ul>\n                </nav>\n            </div>\n        </div>\n
+        \       <div class=\"row\">\n            <div class=\"col-xs-12 text-center\">\n
+        \               <nav class=\"social\">\n                    <ul>\n                        <li><div><a
+        href=\"http://www.facebook.com/viglink\" rel=\"me\"><span class=\"fa-container\"><i
+        class=\"fab fa-facebook-f\" aria-hidden=\"true\" aria-hidden=\"true\"></i><span
+        class=\"sr-only\"></span></span><!--<i class=\"fab fa-facebook-f\" data-fa-transform=\"grow-4
+        right-2 down-3\"></i>--></a></div></li>\n                        <li><div><a
+        href=\"http://twitter.com/VigLink\" rel=\"me\"><i class=\"fab fa-twitter\"
+        data-fa-transform=\"grow-2 right-0 down-1\"></i></a></div></li>\n                        <li><div><a
+        href=\"https://www.linkedin.com/company/365232\" rel=\"me\"><i class=\"fab
+        fa-linkedin-in\" data-fa-transform=\"grow-1 right-0 down-1\"></i></a></div></li>\n
+        \                       <li><div><a href=\"http://instagram.com/viglink\"
+        rel=\"me\"><i class=\"fab fa-instagram\" data-fa-transform=\"grow-2 right-0
+        down-1\"></i></a></div></li>\n                        <li><div><a href=\"http://www.pinterest.com/VigLink\"
+        rel=\"me\"><i class=\"fab fa-pinterest-p\" data-fa-transform=\"grow-1 right-0
+        down-1\"></i></a></div></li>\n                        <li><div><a href=\"https://www.youtube.com/user/VigLink\"
+        rel=\"me\"><i class=\"fab fa-youtube\" data-fa-transform=\"grow-2 right-0
+        down-1\"></i></a></div></li>\n                    </ul>\n                </nav>\n
+        \           </div>\n        </div>\n        <div class=\"row\">\n            <div
+        class=\"copyright col-xs-12 text-center\">\n                <span class=\"copyright\">&copy;
+        Sovrn, Inc.</span>\n            </div>\n        </div>\n    </div>\n</footer>\n</div>\n
+        \               </div>\n            </div>\n        </div>\n\n            <script
+        type=\"text/javascript\">var ctcc_vars = {expiry: \"365\", method: \"\", version:
+        \"1\"};</script>\n\n        <div id=\"catapult-cookie-bar\" class=\"\">\n
+        \           <div class=\"ctcc-inner \">\n            <span class=\"ctcc-left-side\">\n
+        \               VigLink cookie policy:  We and our partners use technology
+        such as cookies on our site to personalize content, provide social media features,
+        and analyze our traffic. Visit our Privacy Policy for more information on
+        our data collection practices. By clicking Accept, you consent to the use
+        of this technology across our website. <a class=\"ctcc-more-info-link\" tabindex=\"0\"
+        target=\"_blank\" href=\"https://www.viglink.com/legal/privacy/\">Privacy
+        Policy</a></span><span class=\"ctcc-right-side\"><button id=\"catapultCookie\"
+        tabindex=\"0\" onclick=\"catapultAcceptCookies();\">Accept</button>\n            </span>\n
+        \           </div><!-- custom wrapper class -->\n        </div>\n        </body>\n\n</html>\n"
+    http_version: 
+  recorded_at: Wed, 17 Jul 2019 19:26:08 GMT
+recorded_with: VCR 5.0.0

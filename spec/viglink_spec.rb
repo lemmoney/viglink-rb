@@ -1,7 +1,14 @@
 # frozen_string_literal: true
 
 RSpec.describe Viglink do
-  subject(:configuration) { described_class.configuration }
+  subject { described_class.configuration }
+
+  let(:default_attributes) do
+    {
+      api_key: ENV['VIGLINK_API_KEY'],
+      secret_key: ENV['VIGLINK_SECRET_KEY']
+    }
+  end
 
   it 'has a version number' do
     expect(Viglink::VERSION).not_to be nil
@@ -9,13 +16,7 @@ RSpec.describe Viglink do
 
   describe '.configuration' do
     context 'when there is no previous configuration' do
-      it 'api_key must be null' do
-        expect(configuration.api_key).to be_nil
-      end
-
-      it 'secret_key must be null' do
-        expect(configuration.secret_key).to be_nil
-      end
+      it { is_expected.to have_attributes(default_attributes) }
     end
 
     context 'with a previous configured instance' do
@@ -26,13 +27,7 @@ RSpec.describe Viglink do
         end
       end
 
-      it 'preserves api_key' do
-        expect(configuration.api_key).to eq('123')
-      end
-
-      it 'preserves secret_key' do
-        expect(configuration.secret_key).to eq('456')
-      end
+      it { is_expected.to have_attributes(api_key: '123', secret_key: '456') }
     end
   end
 
@@ -44,13 +39,7 @@ RSpec.describe Viglink do
       end
     end
 
-    it 'sets api_key' do
-      expect(configuration.api_key).to eq('123')
-    end
-
-    it 'sets secret_key' do
-      expect(configuration.secret_key).to eq('456')
-    end
+    it { is_expected.to have_attributes(api_key: '123', secret_key: '456') }
   end
 
   describe '.reset' do
@@ -62,12 +51,6 @@ RSpec.describe Viglink do
       described_class.reset
     end
 
-    it 'sets api_key to nil' do
-      expect(configuration.api_key).to be_nil
-    end
-
-    it 'sets secret_key to nil' do
-      expect(configuration.secret_key).to be_nil
-    end
+    it { is_expected.to have_attributes(default_attributes) }
   end
 end

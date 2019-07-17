@@ -42,9 +42,16 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_runtime_dependency 'httparty'
+
   spec.add_development_dependency 'bundler', '~> 1.17'
+  spec.add_development_dependency 'byebug', '~> 11.0.0'
+  spec.add_development_dependency 'dotenv', '~> 2.7.0'
+  spec.add_development_dependency 'factory_bot', '~> 5.0.0'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.72.0'
-  spec.add_development_dependency 'rubocop-rspec'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.33.0'
+  spec.add_development_dependency 'vcr', '~> 5.0.0'
+  spec.add_development_dependency 'webmock', '~> 3.6.0'
 end
