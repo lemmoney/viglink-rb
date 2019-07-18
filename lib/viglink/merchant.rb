@@ -27,7 +27,9 @@ module Viglink
         Merchant.from_json(merchant)
       end
 
-      MerchantResults.new total_pages: response.parsed_response['totalPages'], page: response.parsed_response['page'], merchants: merchants
+      MerchantResults.new total_pages: response.parsed_response['totalPages'],
+                          page: response.parsed_response['page'],
+                          merchants: merchants
     end
 
     private_instance_methods
@@ -59,5 +61,8 @@ module Viglink
       }
     end
   end
-  MerchantResults = Struct.new(:total_pages, :page, :merchants, keyword_init: true)
+  MerchantResults = Struct.new :total_pages,
+                               :page,
+                               :merchants,
+                               keyword_init: true
 end
