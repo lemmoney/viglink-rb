@@ -1,8 +1,7 @@
 # VigLink Ruby
+[![Gem Version](https://badge.fury.io/rb/viglink-rb.svg)](https://rubygems.org/gems/viglink-rb) [![Build Status](https://travis-ci.com/lemmoney/viglink-rb.svg?token=kGJtMxwzFwua1ty5npNb&branch=master)](https://travis-ci.com/lemmoney/viglink-rb)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/viglink`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Wrapper for the VigLink API
 
 ## Installation
 
@@ -22,7 +21,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'viglink'
+
+Viglink.configure do |config|
+  config.secret_key = ENV['VIGLINK_SECRET_KEY']
+  config.api_key = ENV['VIGLINK_API_KEY']
+end
+
+Viglink::Merchant.search page: 1
+```
 
 ## Development
 
