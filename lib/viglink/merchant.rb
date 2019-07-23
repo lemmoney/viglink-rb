@@ -10,6 +10,20 @@ module Viglink
   class Merchant
     SEARCH_PATH = '/api/merchant/search'
 
+    def self.search(params = {})
+      response = HTTPClient.get path: SEARCH_PATH,
+                                query: build_search_parameters(params)
+
+      merchants = response.parsed_response['merchants'].map do |merchant|
+        next if merchant.nil?
+        Merchant.from_json(merchant)
+      end
+
+      MerchantResults.new total_pages: response.parsed_response['totalPages'],
+                          page: response.parsed_response['page'],
+                          merchants: merchants
+    end
+
     def self.from_json(merchant = {})
       merchant['rates'] = build_from_json(Viglink::Rate, merchant['rates'])
       merchant['industryTypes'] = build_from_json(Viglink::IndustryType,
@@ -19,22 +33,10 @@ module Viglink
       new json_map.each_with_object({}) { |(k, v), h| h[k] = merchant[v]; }
     end
 
-    def self.search(params = {})
-      response = HTTPClient.get path: SEARCH_PATH,
-                                query: build_search_parameters(params)
-
-      merchants = response.parsed_response['merchants'].map do |merchant|
-        Merchant.from_json(merchant)
-      end
-
-      MerchantResults.new total_pages: response.parsed_response['totalPages'],
-                          page: response.parsed_response['page'],
-                          merchants: merchants
-    end
-
     private_instance_methods
 
     def self.build_from_json(klass, items)
+      return [] unless items.is_a? Array
       items.map do |industry_type|
         klass.from_json(industry_type)
       end
